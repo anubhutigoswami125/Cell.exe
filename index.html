@@ -125,7 +125,7 @@ for(let y=0;y<rows;y++){for(let x=0;x<cols;x++){const i=y*cols+x,p=chars[i];if(!
 if(!still){const driftX=px+Math.sin(t+y*.11)*20,driftY=py+Math.cos(t+x*.08)*16;const dist=Math.hypot(driftX-pointer.x,driftY-pointer.y);if(pointer.active)glow=Math.max(glow,Math.max(0,1-dist/155)*.95);glow=Math.max(glow,(.5+.5*Math.sin(t*2+x*.14+y*.09))*Math.max(0,1-Math.hypot(px-w*.52,py-h*.45)/Math.max(w,h)*.72)*.12);
 for(let j=waves.length-1;j>=0;j--){const wave=waves[j],age=(now-wave.start)/1000;if(age>2.8){waves.splice(j,1);continue}const radius=age*360,delta=Math.abs(Math.hypot(px-wave.x,py-wave.y)-radius);glow=Math.max(glow,Math.max(0,1-delta/34)*(1-age/2.8)*.75*wave.power)}
 }
-if(glow>.025){ctx.fillStyle='rgba(141,255,203,'+Math.min(.9,glow)+')';ctx.shadowColor='rgba(97,231,239,'+glow+')';ctx.shadowBlur=glow*10}else{ctx.fillStyle='rgba(97,231,239,'+(still?.07:.045)+')';ctx.shadowBlur=0}
+if(glow>.025){ctx.fillStyle='rgba(141,255,203,'+Math.min(.9,glow)+')';ctx.shadowColor='rgba(97,231,239,'+glow+')';ctx.shadowBlur=glow*10}else{ctx.fillStyle='rgba(97,231,239,'+(still ? .07 : .045)+')';ctx.shadowBlur=0}
 ctx.fillText(p.char,px,py);ctx.shadowBlur=0;
 }}
 if(!still&&pointer.active&&now-pointer.last>950)pointer.active=false;
