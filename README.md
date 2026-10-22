@@ -1,50 +1,81 @@
 # CELL.EXE — The Microbiology Arcade
 
-**Biology is the system. Microbes are the game.**
+> **Biology is the system. Microbes are the game.**
 
-CELL.EXE is a browser-based microbiology arcade built around short, interactive mini-games and a futuristic biological-lab interface. It is designed to make revision feel like play while connecting challenges to core microbiology topics.
+CELL.EXE is a browser-based microbiology arcade that turns short revision activities into a sci-fi lab experience. It brings together nine mini-games inspired by pattern recognition, memory, vocabulary, logic, and microbiology concepts.
 
-## Play
+**[▶ Play CELL.EXE](https://anubhutigoswami125.github.io/Cell.exe/)** · [View source code](https://github.com/anubhutigoswami125/Cell.exe)
 
-Once GitHub Pages is enabled, the game will be available at:
+## At a glance
 
-https://anubhutigoswami125.github.io/Cell.exe/
+- **9 mini-games** in one arcade
+- **3 selectable difficulty levels:** Easy, Medium, and Hard
+- **Browser-based:** no installation, account, API key, or backend
+- **Local progress:** XP is saved in the browser on the device you use
+- **Fictional leaderboard:** a simulated arcade feature, not a live online ranking
 
-## Arcade modules
+## Explore the arcade
 
-- **Bio-2048** — merge values to grow your culture.
-- **Wordle: Lab Terms** — decode five-letter science terms.
-- **Pathogen Minesweeper** — scan a grid and avoid pathogen hotspots.
-- **Genome Sudoku** — complete a number-pattern grid.
-- **Sanitizer Space Force** — tap pathogen aliens to neutralize them.
-- **Micro-Crossword** — solve a microbiology clue.
-- **Specimen Shuffle** — restore the specimen-tile sequence.
-- **Cell Memory** — match hidden specimen pairs.
-- **Concept Sorter** — classify lab concepts and microbial terms.
+| Module | What you do |
+| --- | --- |
+| **Bio-2048** | Combine matching values to build up your culture. |
+| **Wordle: Lab Terms** | Guess science-related words using letter clues. |
+| **Pathogen Minesweeper** | Inspect a grid and avoid hidden pathogen hotspots. |
+| **Genome Sudoku** | Use logic to complete a number-pattern puzzle. |
+| **Sanitizer Space Force** | React quickly to neutralize pathogen-like targets. |
+| **Micro-Crossword** | Solve a clue using microbiology vocabulary. |
+| **Specimen Shuffle** | Rearrange tiles to restore the specimen image. |
+| **Cell Memory** | Find matching pairs by remembering hidden positions. |
+| **Concept Sorter** | Classify microbiology and laboratory concepts. |
 
-Each module offers Easy, Medium, and Hard settings. Challenge rewards contribute to a locally saved XP score. The leaderboard is simulated and uses fictional player names; it is not a real online ranking.
+## How to play
 
-## Run locally
+1. Open the [live arcade](https://anubhutigoswami125.github.io/Cell.exe/).
+2. Choose a module and launch it.
+3. In the game window, select **Easy**, **Medium**, or **Hard** before playing. Changing difficulty starts that module at the selected level and resets its challenge sequence.
+4. Complete the challenge and use the in-game controls to continue.
+5. Your locally stored XP remains in that browser unless its site data is cleared.
 
-No build step, package manager, API key, or backend is required. Open `index.html` in a modern browser.
+**Tip:** If an update does not appear on the live site, refresh the page with **Ctrl + Shift + R** (Windows) or **Cmd + Shift + R** (Mac). GitHub Pages may take a short time to publish a new commit.
 
-## Publish with GitHub Pages
+## Run it locally
 
-1. Open the repository **Settings**.
-2. Select **Pages** from the sidebar.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Choose the `main` branch and `/(root)` folder, then save.
-5. Wait for the site to build, then use the **Visit site** link in the Pages settings.
+CELL.EXE is a lightweight static website. There is no build process or package installation.
 
-See the official [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+1. Download or clone this repository.
+2. Open `index.html` in a modern browser.
 
-## Technology
+To clone it using Git:
 
-HTML, CSS, and vanilla JavaScript. Progress is stored in the browser using local storage; no player accounts or server-side leaderboard are used.
+```bash
+git clone https://github.com/anubhutigoswami125/Cell.exe.git
+cd Cell.exe
+```
 
-## Learning note
+Then open `index.html` in your browser.
 
-CELL.EXE is a learning aid, not a substitute for laboratory training or authoritative course materials. Some games use simplified mechanics for accessibility.
+## Built with
+
+- **HTML** for the page and game interfaces
+- **CSS** for the responsive sci-fi arcade presentation
+- **Vanilla JavaScript** for game logic, interactions, and browser-stored progress
+- **GitHub Pages** for static hosting
+
+No external JavaScript framework, server-side database, or player account is required.
+
+## Project notes
+
+- The leaderboard is **simulated**; its players and rankings are fictional.
+- XP and related browser-stored progress are local to the browser/device. They do not sync across devices.
+- The mini-games simplify concepts for accessibility and entertainment. Use course materials and trusted scientific references for formal study.
+- CELL.EXE is an educational project, not a substitute for laboratory instruction or biosafety training.
+
+## Repository
+
+- **Live demo:** https://anubhutigoswami125.github.io/Cell.exe/
+- **Source:** https://github.com/anubhutigoswami125/Cell.exe
+- **Main entry point:** `index.html`
 
 ---
-Built for curious minds exploring microbiology.
+
+*Made for curious minds exploring microbiology.*
