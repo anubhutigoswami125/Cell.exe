@@ -11,8 +11,11 @@ CELL.EXE is a browser-based microbiology arcade that turns short revision activi
 - **9 mini-games** in one arcade
 - **3 selectable difficulty levels:** Easy, Medium, and Hard
 - **Browser-based:** no installation, account, API key, or backend
-- **Local progress:** XP is saved in the browser on the device you use
-- **Fictional leaderboard:** a simulated arcade feature, not a live online ranking
+- **Timed challenges:** watch the live timer and see your completion time when you clear a round
+- **Personal bests:** best times are saved per game and difficulty, plus an overall personal best
+- **Player name:** enter a name to personalize your leaderboard row
+- **Local progress:** your XP, name, and best times are saved in the browser on the device you use
+- **Fictional leaderboard:** the other players are simulated; this is not a live online ranking
 
 ## Explore the arcade
 
@@ -33,8 +36,9 @@ CELL.EXE is a browser-based microbiology arcade that turns short revision activi
 1. Open the [live arcade](https://anubhutigoswami125.github.io/Cell.exe/).
 2. Choose a module and launch it.
 3. In the game window, select **Easy**, **Medium**, or **Hard** before playing. Changing difficulty starts that module at the selected level and resets its challenge sequence.
-4. Complete the challenge and use the in-game controls to continue.
-5. Your locally stored XP remains in that browser unless its site data is cleared.
+4. Watch the timer while playing. On success, your completion time and personal best are shown.
+5. Use the player-name field above the leaderboard to save the name shown in your personal row.
+6. Your XP, name, and best times remain in that browser unless its site data is cleared.
 
 **Tip:** If an update does not appear on the live site, refresh the page with **Ctrl + Shift + R** (Windows) or **Cmd + Shift + R** (Mac). GitHub Pages may take a short time to publish a new commit.
 
@@ -66,7 +70,8 @@ No external JavaScript framework, server-side database, or player account is req
 ## Project notes
 
 - The leaderboard is **simulated**; its players and rankings are fictional.
-- XP and related browser-stored progress are local to the browser/device. They do not sync across devices.
+- XP, player name, and best-time records are stored locally in the browser/device. They do not sync across devices.
+- The leaderboard shows a personal row alongside simulated rivals; it does not upload scores or create a shared online competition.
 - The mini-games simplify concepts for accessibility and entertainment. Use course materials and trusted scientific references for formal study.
 - CELL.EXE is an educational project, not a substitute for laboratory instruction or biosafety training.
 
